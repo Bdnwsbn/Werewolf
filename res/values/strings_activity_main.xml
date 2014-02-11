@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">Username: </string>
+    <string name="password">Password: </string>
+    <string name="verify_password">Verify Password: </string>
+    <string name="firstname">First Name: </string>
+    <string name="lastname">Last Name: </string>
+    <string name="register">Register</string>
+    <string name="error_match">Passwords don\'t match</string>
+    
+</resources>

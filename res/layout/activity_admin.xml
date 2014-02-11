@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_tab2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_claw" />
+
+    <Button
+        android:id="@+id/restart_game_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_game_stats_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button1_shape"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/restart_game"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/view_game_stats_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_game_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/button1_shape"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/view_game_stats"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/admin_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/werewolf2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:shadowColor="#2a2a2a"
+        android:shadowRadius="7"
+        android:text="@string/admin_textview_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+<Button
+        android:id="@+id/create_game_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view_game_stats_btn"
+        android:layout_below="@+id/admin_textView"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/button1_shape"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/create_game"
+        android:textColor="@android:color/white" />
+
+<TextView
+    android:id="@+id/werewolf2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="58dp"
+    android:paddingLeft="15dp"
+    android:shadowColor="#FFFFFF"
+    android:shadowRadius="7"
+    android:text="@string/werewolf"
+    android:textSize="18sp" />
+
+</RelativeLayout>

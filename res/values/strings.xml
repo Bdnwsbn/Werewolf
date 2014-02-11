@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">werewolfclient</string>
+    <string name="action_settings">Settings</string>
+    <string name="kill">Kill</string>
+    <string name="vote">Vote</string>
+    <string name="achievements">Achievements</string>
+    <string name="title_activity_vote">VoteActivity</string>
+    <string name="lastHung">"Last Hung: "</string>
+    <string name="lastKilled">Last Killed:</string>
+    <string name="currentScoreText">"Score: "</string>
+    <string name="playerHung">None</string>
+    <string name="playerKilled">None</string>
+    <string name="currentScore">0</string>
+    <string name="playersNearby">Players Nearby</string>
+    <string name="title_activity_players_nearby">PlayersNearby</string>
+    <string name="title_activity_achievements">Achievements</string>
+    <string name="title_activity_tabsfragment">Game Status</string>
+    <string name="role">"Role: "</string>
+    <string name="status">Status: </string>
+    <string name="login">Login</string>
+    <string name="register_button">Register</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="create_game">Create Game</string>
+    <string name="restart_game">Restart Game</string>
+    <string name="view_game_stats">View Game Stats</string>
+    <string name="title_activity_view_game_stats">ViewGameStatsActivity</string>
+    <string name="admin_checkBox">Admin</string>
+    <string name="werewolf">Werewolf</string>
+    <string name="back_login">Back to login</string>
+    <string name="admin_textview_text">Admin Control Panel</string>
+    <string name="title_activity_register">Registration</string>
+
+</resources>

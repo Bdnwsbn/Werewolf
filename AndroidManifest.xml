@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.wm.werewolfclient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wwicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.wm.werewolfclient.LoginActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:windowSoftInputMode="adjustPan|stateVisible" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.TabsFragmentActivity"
+            android:label="@string/werewolf" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.VoteActivity"
+            android:label="@string/title_activity_vote" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.PlayersNearbyActivity"
+            android:label="@string/title_activity_players_nearby" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.AchievementsActivity"
+            android:label="@string/title_activity_achievements" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.AdminActivity"
+            android:label="@string/title_activity_admin" >
+        </activity>
+        <activity
+            android:name="edu.wm.werewolfclient.ViewGameStatsActivity"
+            android:label="@string/title_activity_view_game_stats" >
+        </activity>
+    </application>
+
+</manifest>

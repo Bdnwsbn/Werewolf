@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    tools:context=".PlayersNearbyActivity" >
+    
+     <ImageView
+         android:id="@+id/imageView_rk"
+         android:layout_width="530dp"
+         android:layout_height="60dp"
+         android:layout_centerInParent="true"
+         android:adjustViewBounds="true"
+         android:scaleType="centerCrop"
+         android:src="@drawable/woodplank" />
+    
+    <TextView
+        android:id="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="65dp"
+        android:paddingTop="10dp"
+        android:shadowColor="#0AF0F0"
+        android:shadowRadius="25"
+        android:text="Player Name"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+    
+    <Button
+        android:id="@id/register_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"  
+        android:layout_marginRight="35dp"
+        android:background="@drawable/btn_glassorange" 
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Vote"
+        android:textSize = "24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white" />
+    
+    <Button
+        android:id="@id/button2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_toLeftOf="@id/register_button"
+        android:layout_alignParentTop="true" 
+        android:background="@drawable/btn_glassred"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Kill" 
+        android:textSize = "24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    
+</RelativeLayout>

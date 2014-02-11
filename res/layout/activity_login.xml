@@ -1,0 +1,145 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <!-- Login progress -->
+
+    <ImageView
+        android:id="@+id/imageView_tab2"
+        android:layout_width="wrap_content"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/werewolf" />
+
+    <LinearLayout
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/login_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/login_progress_signing_in"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <!-- Login form -->
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_height="460dp"
+            android:orientation="vertical" >
+
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/werewolf"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:hint="@string/prompt_username"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="400dp"
+                android:layout_height="48dp"
+                android:layout_alignLeft="@+id/username"
+                android:layout_below="@+id/username"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/werewolf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="76dp"
+                android:paddingLeft="15dp"
+                android:shadowColor="#f61c12"
+                android:shadowDx="-2"
+                android:shadowDy="2"
+                android:shadowRadius="25"
+                android:text="@string/werewolf"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/admin_checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/sign_in_button"
+                android:layout_below="@+id/sign_in_button"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="22dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="@string/admin_checkBox"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/password"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/button_red"
+                android:text="@string/register_button"
+                android:textColor="@android:color/white" 
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/sign_in_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/register_button"
+                android:layout_alignBottom="@+id/register_button"
+                android:layout_alignRight="@+id/password"
+                android:background="@drawable/button_red"
+                android:text="@string/action_sign_in_short"
+                android:textColor="@android:color/white" 
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</merge>

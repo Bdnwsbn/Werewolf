@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/scroll2"
+    tools:context=".GameStatusActivity" >
+
+    <ImageView
+        android:id="@+id/imageView_tab2"
+        android:layout_width="fill_parent"
+        android:layout_height="420dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nighttowncrop" />
+
+    <TextView
+        android:id="@+id/currentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/currentScoreText"
+        android:layout_alignBottom="@+id/currentScoreText"
+        android:layout_alignLeft="@+id/playerKilled"
+        android:layout_marginLeft="19dp"
+        android:text="@string/currentScore"
+        android:textColor="#0F0FD6" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView_tab2"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1.2"
+        android:scaleY="1.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/wood" />
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/textView1"
+    android:layout_below="@+id/textView1"
+    android:layout_marginTop="21dp"
+    android:text="Role:"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/textView3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/textView1"
+    android:layout_below="@+id/textView2"
+    android:layout_marginTop="18dp"
+    android:text="Status:"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/imageView2"
+    android:layout_marginLeft="61dp"
+    android:layout_marginTop="24dp"
+    android:text="Player:"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/currentScoreText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/statusView"
+    android:layout_alignBottom="@+id/statusView"
+    android:layout_toLeftOf="@+id/playerHung"
+    android:text="@string/currentScoreText"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/playerHung"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView2"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="71dp"
+    android:text="@string/playerHung"
+    android:textColor="#5E3B01" />
+
+<TextView
+    android:id="@+id/lastHungText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView2"
+    android:layout_alignRight="@+id/currentScoreText"
+    android:layout_marginRight="21dp"
+    android:text="@string/lastHung"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/lastKilledText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/roleView"
+    android:layout_alignBottom="@+id/roleView"
+    android:layout_alignRight="@+id/currentScoreText"
+    android:text="@string/lastKilled"
+    android:textColor="@android:color/black" />
+
+<TextView
+    android:id="@+id/playerKilled"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView3"
+    android:layout_alignLeft="@+id/playerHung"
+    android:layout_marginLeft="18dp"
+    android:text="@string/playerKilled"
+    android:textColor="#5E3B01" />
+
+<TextView
+    android:id="@+id/roleView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView3"
+    android:layout_marginLeft="8dp"
+    android:layout_toRightOf="@+id/textView2"
+    android:text="Large Text"
+    android:textColor="@android:color/white" />
+
+<TextView
+    android:id="@+id/usernameView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/textView2"
+    android:layout_toRightOf="@+id/textView1"
+    android:layout_marginLeft="8dp"
+    android:text="Large Text"
+    android:textColor="@android:color/white" />
+
+<TextView
+    android:id="@+id/statusView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView3"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_toRightOf="@+id/textView3"
+    android:layout_marginLeft="8dp"
+    android:text="Large Text"
+    android:textColor="@android:color/white" />
+
+</RelativeLayout>
