@@ -8,4 +8,4 @@ Uses 'Werewolf-web-service'
 ## Installation
 
 * Eclipse
-  * Import 'Werewolf' project, 'Run' on an Android Device using minimum of Android 4.0 (Important: Some functionality may not work on an AVD!)
+  * Import 'Werewolf' project, 'Run' on an Android Device running at minimum Android 4.0 (Important: Some functionality may not work on an AVD!)
