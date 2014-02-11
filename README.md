@@ -13,6 +13,7 @@ Uses 'Werewolf-web-service'
 ## Implemented
 * Custom UI with graphics
 * Asynchronous HTTP requests
+* JSON response
 * Login form
 * Registration form
 
